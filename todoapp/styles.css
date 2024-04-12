@@ -1,0 +1,160 @@
+body {
+    font-family: monospace, sans-serif;
+    margin: 20px;
+}
+
+/* dark modes */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .note {
+    background-color: #444;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.topcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#modeToggle {
+    background-color: gray;
+}
+#modeToggle:hover {
+    background-color: rgb(75, 75, 75);
+}
+
+h1 {
+    margin-right: auto;
+}
+
+.form {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #326426;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+}
+/* Button Styling */
+.deletebutton {
+    padding: 5px;
+    transform: translateY(-2px);
+    background-color: chocolate;
+    display: none;
+}
+.deletebutton:hover {
+    background-color: rgb(169, 85, 25);
+}
+
+.notebutton {
+    padding: 5px;
+    transform: translateY(-2px);
+    background-color: rgb(100, 190, 100);
+    display: none;
+}
+.notebutton:hover {
+    background-color: rgb(45, 124, 45);
+}
+
+.duplicatebutton {
+    padding: 5px;
+    transform: translateY(-2px);
+    background-color: rgb(98, 186, 196);
+    display: none;
+}
+.duplicatebutton:hover {
+    background-color:  rgb(72, 136, 143);
+}
+
+.editbutton {
+    padding: 5px;
+    transform: translateY(-2px);
+    background-color: rgb(228, 146, 126);
+    display: none;
+}
+.editbutton:hover {
+    background-color: rgb(190, 116, 97);
+
+}
+/* end button styling */
+
+/* Main button styling */
+button:hover {
+    background-color: #172d12;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tooltip-content {
+    position: relative;
+    margin-top: 0px;
+    z-index: 1000;
+    color: gray;
+    border-radius: 5px;
+    display: none;
+    font-size: small;
+}
+
+.note {
+    max-width: 90%; /* Limit width to 90% of its container */
+    background-color: #f4f4f4; /* Light background for better readability */
+    padding: 5px 5px 5px 15px; /* Padding for text inside the note */
+    border-radius: 5px; /* Rounded corners for aesthetic */
+    margin-top: 5px; /* Space between note and task text */
+    overflow: auto; /* Enables scrolling for overflow text */
+    height: auto; /* Auto height to wrap content */
+    max-height: 100px; /* Maximum height before scrolling */
+    word-wrap: break-word; /* Ensure long words do not cause overflow */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    position: relative; /* Changed from absolute to relative */
+}
+
+li {
+    flex-grow: 1;
+    padding: 10px 50px 10px 0;
+}
+
+li span:hover {
+    color:green;
+    text-decoration: line-through;
+    cursor: default;
+}
+
+li:hover .tooltip-content {
+    display: block;
+}
+
+li:hover .deletebutton, li:hover .notebutton, li:hover .duplicatebutton, li:hover .editbutton {
+    display: inline;
+    text-decoration: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
