@@ -1,5 +1,5 @@
 # My To do app
-You can try it out live at: (https://getcracking.netlify.app/)[https://getcracking.netlify.app/].
+You can try it out live at: [https://getcracking.netlify.app/](https://getcracking.netlify.app/)
 
 Features:
 1. Add tasks (can press `Enter` to create)
@@ -10,3 +10,9 @@ Features:
 6. Delete tasks
 7. Dark mode
 8. Notes saved in local storage - can be used offline
+
+Light Mode:
+![light mode](img/lightmode.png)
+
+Dark Mode:
+![dark](img/darkmode.png)
