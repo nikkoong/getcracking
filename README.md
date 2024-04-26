@@ -10,5 +10,3 @@ Features:
 6. Delete tasks
 7. Dark mode
 8. Notes saved in local storage - can be used offline
-
-
