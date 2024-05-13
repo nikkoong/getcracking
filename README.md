@@ -17,6 +17,9 @@ Future:
 3. Mobile-only swipe features to all task actions
 4. TBD
 
+---
+
+## Images
 Light Mode:
 ![light mode](img/lightmode.png)
 
