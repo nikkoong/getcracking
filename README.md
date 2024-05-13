@@ -21,7 +21,9 @@ Future:
 
 ## Images
 Light Mode:
+
 ![light mode](img/lightmode.png)
 
 Dark Mode:
+
 ![dark](img/darkmode.png)
